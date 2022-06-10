@@ -14,7 +14,9 @@ class BinaryTree {
             this.preOrder(left);
         }
 
-        if (right < this.arr.length) {
+        if (right < this.arr.length) {  //break문이 없기에
+                                        // if left 에서의 부분이 끝나면
+                                        // if right 에서의 부분을 끝내야함
             this.preOrder(right);
         }
     }
